@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin:0 auto;
+	max-width:40em;
+	padding:0 .62em;
+	font:1.2em/1.62em sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+	margin-bottom:25px;
+	margin-top:25px;
+	height: 5px;
+    	background-color: #efefef;
+    	border: solid 1px #efefef;
+}
+/* hr {
+	margin-bottom:50px;
+	margin-top:50px;
+	height: 20px;
+    	background-color: #efefef;
+    	border: solid 2px #cccccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}*/
+.block { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: solid 2px #efefef;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#efefef;
+	padding:10px 10px 10px 10px;
+}
+
+.excerpt {
+	text-align:left;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding:0 10px 0 10px;
+}
+
+.social { text-align:center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	line-height:16px;
+	font-weight:bold;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+header { Text-align:center; }
+
+h1 {
+	font-size:2.2em;
+	line-height:1.2em;
+}
+
+h2 {
+	font-size:1.6em;
+	line-height:1.2em;
+}
+
+h3 {
+	line-height:1.2em;
+}
+
+.responsive-image {
+	display:block;
+	width:100%;
+	text-align:center;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*  height: auto;
+  	width:100%; */
+}
+
+#mc_embed_signup form {text-align:center; padding:5px 0 5px 0;}
+.mc-field-group { display: inline-block; } /* positions input field horizontally */
+#mc_embed_signup input.email {font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup .clear {display: inline-block;} /* positions button horizontally in line with input */
+#mc_embed_signup .button {font-size: 13px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #aaa; box-sizing:border-box; height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s;}
+#mc_embed_signup .button:hover {background-color:#777; cursor:pointer;}
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+@media (max-width: 768px) {
+    #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
+    #mc_embed_signup .clear {display: block; width: 100% }
+    #mc_embed_signup .button {width: 100%; margin:0; }
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  background:#efefef;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#666666;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+@media print {
+body {
+	max-width:none;
+}
+}
+
+
+/* nav specific */
+
+
+/*Strip the ul of padding and list styling*/
+ul#menu {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*Create a horizontal list with spacing*/
+li#menu {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+
+li#menu a {
+	display:block;
+	min-width:108px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size:17px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+	font-weight:bold;
+	background: #f2f2f2;
+	text-decoration: none;
+}
+
+/*Style for menu links long 4 tops
+li#menu a {
+	display:block;
+	min-width:190px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size:17px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+	font-weight:bold;
+	background: #f2f2f2;
+	text-decoration: none;
+}
+*/
+
+/*Hover state for top level links*/
+li#menu:hover a {
+	background: #cccccc;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul#menu {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li#menu {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul#menu li#menu, li#menu a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
