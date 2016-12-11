@@ -1,5 +1,3 @@
-<script type="text/javascript">
-// place your images in this array
 var random_images_array = ['durbar-square.jpg', 'lo-cai-Village-schoolgirl-sapa.jpg', 'bangkok-moto-taxi.jpg', 'bangkok-china-town-lion.jpg', 'sunset.jpg', 'sikkim-himalayas.jpg', 'nepal.jpg', 'wyoming.jpg'];
 
 function getRandomImage(imgAr, path) {
@@ -9,4 +7,3 @@ function getRandomImage(imgAr, path) {
     var imgStr = '<img src="' + path + img + '" alt = "ManOnTheStreet.com" class="responsive-image">';
     document.write(imgStr); document.close();
 }
-</script>
