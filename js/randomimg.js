@@ -1,4 +1,4 @@
-var random_images_array = ['durbar-square.jpg', 'lo-cai-Village-schoolgirl-sapa.jpg', 'bangkok-moto-taxi.jpg', 'bangkok-china-town-lion.jpg', 'sunset.jpg', 'sikkim-himalayas.jpg', 'nepal.jpg', 'wyoming.jpg'];
+var random_images_array = ['durbar-square.jpg', 'lo-cai-Village-schoolgirl-sapa.jpg', 'bangkok-moto-taxi.jpg', 'bangkok-china-town-lion.jpg', 'sunset.jpg', 'sikkim-himalayas.jpg', 'nepal.jpg', 'shiprock.jpg'];
 
 function getRandomImage(imgAr, path) {
     path = path || 'img/random/'; // default path here
