@@ -45,6 +45,23 @@
 <br clear="all" />
 	<header><script type="text/javascript">getRandomImage(random_images_array, 'img/random/')</script></header>
 <br clear="all" />
+	<br clear="all" />
+	<center>
+	
+	<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '1468347',
+        accessToken: '6e8c6898f90d4fd58f995ade3e7e8f95'
+	template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
+</script>
+		<div id="instafeed"></div></center>
+	
+	<br clear="all" />
+	
+	<br clear="all" />
 <div class="footer">
   <center>
     ManOnTheStreet.com &copy; - <a href="http://manonthestreet.com/privacy-policy/">Privacy Policy</a>
