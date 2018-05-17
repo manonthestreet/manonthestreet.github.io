@@ -48,14 +48,13 @@
 	<br clear="all" />
 	<center>
 	
-	<script type="text/javascript">
-    var userFeed = new Instafeed({
+<script type="text/javascript">
+    var feed = new Instafeed({
         get: 'user',
-        userId: '1468347',
-        accessToken: '6e8c6898f90d4fd58f995ade3e7e8f95'
-	template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        userId: 'USER_ID'
+        }
     });
-    userFeed.run();
+    feed.run();
 </script>
 		<div id="instafeed"></div></center>
 	
