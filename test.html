@@ -114,7 +114,36 @@
                 <!-- <center><h2><a href="http://instagram.com/manonthestreet" style="color:#666666;">Instagram</a></h2></center>
                     <hr /> -->
 					
-                    <script type='text/javascript' src='http://manonthestreet.tumblr.com/js'></script>
+                    <div style="font-family:'Helvetica Neue',arial,helvetica,helve,sans-serif; text-align:center; font-size:10px; max-width:290px;">
+
+ <div id="content">
+  </div></div>
+</body>
+  <script>    $.ajax({
+        url: "http://api.tumblr.com/v2/blog/manonthestreet.tumblr.com/posts?api_key=rX9xaWvvjCYmGeQACbnThWAyqUJ7LcBqh58DYqG2XKZJ8K5nhk",
+        dataType: 'jsonp',
+        success: function(posts){
+          var postings = posts.response.posts;
+          console.log(postings);
+          var text = '';
+    for (var i in postings) {
+           var p = postings[i];
+          text += '<p></p>';
+      if(p.type == 'photo'){
+        text +='<img src=' +  p.photos[0].original_size.url + ' style="height:auto; width:100%; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px">' + p.caption
+      }
+        if(p.type == 'video'){
+        text += p.player[0].embed_code +'<p></p>' +' <p style="font-size:10px; font-family:Helvetica Neue,arial,helvetica,sans-serif;">' + p.caption +'</p>';
+      }
+          if(p.type == 'text'){
+        text += p.body + p.caption;
+      }
+    text += '<a href='+ p.post_url +' style="font-size:10px; font-family:Helvetica Neue,arial,helvetica,sans-serif;">Permalink</a></li>';
+          text += '<br><hr></br>';
+          }
+          $('#content').append(text);
+        }
+    });</script>
                     
 					</div>
                 
